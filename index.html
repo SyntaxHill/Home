@@ -1,242 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SyntaxHill - Digital Dreams Made Real</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <style>
-    html {
-      scroll-padding-top: 100px;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #0B0F14;
-      color: #F5F7FA;
-      overflow-x: hidden;
-    }
-    .futuristic-font {
-      font-family: 'Orbitron', monospace;
-    }
-    .gradient-text {
-      background: linear-gradient(135deg, #00BFFF, #38E8FF);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    .hover-glow:hover {
-      box-shadow: 0 0 30px rgba(0, 191, 255, 0.5);
-      transform: translateY(-2px);
-    }
-    .typewriter {
-      overflow: hidden;
-      border-right: .15em solid #38E8FF;
-      white-space: nowrap;
-      animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
-    }
-    @keyframes typing {
-      from { width: 0 }
-      to { width: 100% }
-    }
-    @keyframes blink-caret {
-      from, to { border-color: transparent }
-      50% { border-color: #38E8FF; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/frontend/css/responsive.css">
+    <link rel="stylesheet" href="/frontend/css/global.css">
+    <link rel="stylesheet" href="/frontend/css/variables.css">
+    <link rel="stylesheet" href="/frontend/css/header.css">
+    <link rel="stylesheet" href="/frontend/css/main.css">
+    <link rel="stylesheet" href="/frontend/css/footer.css">
+    <title>Anonymous - Built Defferent</title>
 </head>
-    <body>
-  <!-- Navigation Bar -->
-  <nav class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-70 backdrop-blur-md text-white shadow-lg">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl futuristic-font gradient-text">SyntaxHill</h1>
-      <ul class="hidden md:flex space-x-6 text-sm">
-        <li><a href="#hero" class="hover-glow">Home</a></li>
-        <li><a href="#about" class="hover-glow">About</a></li>
-        <li><a href="#projects" class="hover-glow">Projects</a></li>
-        <li><a href="#videos" class="hover-glow">Videos</a></li>
-        <li><a href="#testimonials" class="hover-glow">Testimonials</a></li>
-        <li><a href="#contact" class="hover-glow">Contact</a></li>
-        <li><a href="#login" class="hover-glow px-4 py-2 border border-cyan-400 rounded-full">Login / Signup</a></li>
-      </ul>
-      <button class="md:hidden text-cyan-400">☰</button>
+
+<body>
+    <header>
+
+        <nav>
+            <div class="nav-logo">
+                <ion-icon name="code-outline"></ion-icon>
+                <a href="index.htm data-text=""l">PORTFOLIO</a>
+            </div>
+            <ul class="nav-links-container">
+                <li id="nav-links"><a href="#" class="active">Home</a></li>
+                <li id="nav-links"><a href="#">Skills</a></li>
+                <li id="nav-links"><a href="#">Social</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <div class="bar-animations">
+        <div id="bars" style="--i:6;"></div>
+        <div id="bars" style="--i:5;"></div>
+        <div id="bars" style="--i:4;"></div>
+        <div id="bars" style="--i:3;"></div>
+        <div id="bars" style="--i:2;"></div>
+        <div id="bars" style="--i:1;"></div>
     </div>
-  </nav>
+    <main>
+        <section id="home">
+            <div class="home-info">
+                <h2>ARIJIT DAS</h2>
+                <h3 style="color: aliceblue;">I'M A
+                    <span style="color: var(--accent1-color);">WEB DEVELOPER</span>
+                    <!-- <span class="roles-box">
+                        <span class="roles" style="--index:4;" data-text="Frontend Developer">Frontend Developer</span>
+                        <span class="roles" style="--index:3;" data-text="Youtuber">Youtuber</span>
+                        <span class="roles" style="--index:2;" data-text="Designer">Designer</span>
+                        <span class="roles" style="--index:1;" data-text="Freelancer">Freelancer</span>
+                    </span> -->
+                </h3>
+                <p class="about-me-text">
+                    I'm a school student with a strong passion for programming, web development, and continuous
+                    learning. My programming
+                    journey includes Python,
+                    Flask, C, C++, SQL, HTML, CSS, and JavaScript, and I love expanding my knowledge by building
+                    real-world applications.
+                    Along with my technical skills, I have good formal spoken English, which helps me communicate ideas
+                    effectively and
+                    collaborate with others. I believe in learning through practice, solving challenging problems, and
+                    constantly improving
+                    myself. My goal is to become a skilled full-stack developer and contribute to meaningful, innovative
+                    software solutions.
+                </p>
+                <div class="btn-soc">
+                    <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-x"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                </div>
+                <button class="dwn-cv">Download CV</button>
+            </div>
+            <div id="posture">
+                <div class="img-box">
+                    <div class="img-item">
+                        <img src="bg-less-mpic.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <!-- Hero Section -->
-  <section id="hero" class="min-h-screen flex flex-col justify-center items-center pt-32 text-center px-6">
-    <h2 class="text-4xl md:text-6xl futuristic-font gradient-text mb-4">Welcome to SyntaxHill</h2>
-    <p class="typewriter text-lg md:text-xl mb-6">Code for me 🛒 | Grocery list builder 🏆 | Interactive certificate 🔬 | Biology quiz</p>
-    <a href="#projects" class="hover-glow px-6 py-3 border border-cyan-400 rounded-full text-cyan-300">Explore Projects</a>
-    <div class="mt-10 animate-bounce text-cyan-400 text-2xl">↓</div>
-  </section>
-        <!-- About Me Section -->
-<section id="about" class="pt-32 pb-20 px-6 bg-[#121A27] text-white">
-  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-    <!-- Bio -->
-    <div>
-      <h3 class="text-3xl futuristic-font gradient-text mb-4">About Me</h3>
-      <p class="text-lg mb-6">
-        I’m a passionate developer creating innovative tools that blend functionality with delight. My mission is to bridge the gap between complex technology and user-friendly design.
-      </p>
-      <p class="text-md text-cyan-300">Let’s build something epic together.</p>
-    </div>
+    <footer>
 
-    <!-- Skills -->
-    <div class="space-y-6">
-      <div>
-        <h4 class="text-xl mb-2">JavaScript 🧠</h4>
-        <div class="w-full bg-gray-700 rounded-full h-4">
-          <div class="bg-cyan-400 h-4 rounded-full w-[90%] animate-pulse"></div>
-        </div>
-      </div>
-      <div>
-        <h4 class="text-xl mb-2">React ⚛️</h4>
-        <div class="w-full bg-gray-700 rounded-full h-4">
-          <div class="bg-cyan-400 h-4 rounded-full w-[85%] animate-pulse"></div>
-        </div>
-      </div>
-      <div>
-        <h4 class="text-xl mb-2">Node.js 🔧</h4>
-        <div class="w-full bg-gray-700 rounded-full h-4">
-          <div class="bg-cyan-400 h-4 rounded-full w-[80%] animate-pulse"></div>
-        </div>
-      </div>
-      <div>
-        <h4 class="text-xl mb-2">CSS / HTML 🎨</h4>
-        <div class="w-full bg-gray-700 rounded-full h-4">
-          <div class="bg-cyan-400 h-4 rounded-full w-[95%] animate-pulse"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Projects Section -->
-<section id="projects" class="pt-32 pb-20 px-6 bg-[#1A1A2E] text-white">
-  <div class="max-w-6xl mx-auto">
-    <h3 class="text-3xl futuristic-font gradient-text mb-10 text-center">Featured Projects</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Project Card 1 -->
-      <div class="bg-[#121A27] p-6 rounded-lg shadow-lg hover-glow transition-all">
-        <div class="text-4xl mb-2">🛒</div>
-        <h4 class="text-xl mb-2">Grocery List Builder</h4>
-        <p class="mb-4 text-sm text-gray-300">An intuitive tool to create and manage grocery lists with smart suggestions.</p>
-        <a href="#" class="text-cyan-300 hover:underline">View Project</a>
-      </div>
+    </footer>
 
-      <!-- Project Card 2 -->
-      <div class="bg-[#121A27] p-6 rounded-lg shadow-lg hover-glow transition-all">
-        <div class="text-4xl mb-2">🏆</div>
-        <h4 class="text-xl mb-2">Quiz Champion</h4>
-        <p class="mb-4 text-sm text-gray-300">A gamified quiz platform with real-time scoring and leaderboard.</p>
-        <a href="#" class="text-cyan-300 hover:underline">View Project</a>
-      </div>
-
-      <!-- Project Card 3 -->
-      <div class="bg-[#121A27] p-6 rounded-lg shadow-lg hover-glow transition-all">
-        <div class="text-4xl mb-2">🔬</div>
-        <h4 class="text-xl mb-2">Interactive Certificate</h4>
-        <p class="mb-4 text-sm text-gray-300">Generate dynamic certificates with embedded animations and QR codes.</p>
-        <a href="#" class="text-cyan-300 hover:underline">View Project</a>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Videos Section -->
-<section id="videos" class="pt-32 pb-20 px-6 bg-[#121A27] text-white">
-  <div class="max-w-6xl mx-auto">
-    <h3 class="text-3xl futuristic-font gradient-text mb-10 text-center">YouTube Videos</h3>
-    <div class="flex overflow-x-auto space-x-6 snap-x snap-mandatory pb-4">
-      <!-- Video Tile 1 -->
-      <div class="min-w-[300px] snap-start bg-[#1A1A2E] p-4 rounded-lg shadow-lg hover-glow transition-all">
-        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Video 1" class="rounded mb-2" />
-        <h4 class="text-lg mb-2">Project Demo</h4>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="text-cyan-300 hover:underline">Watch Now</a>
-      </div>
-
-      <!-- Video Tile 2 -->
-      <div class="min-w-[300px] snap-start bg-[#1A1A2E] p-4 rounded-lg shadow-lg hover-glow transition-all">
-        <img src="https://img.youtube.com/vi/3JZ_D3ELwOQ/0.jpg" alt="Video 2" class="rounded mb-2" />
-        <h4 class="text-lg mb-2">UI Showcase</h4>
-        <a href="https://www.youtube.com/watch?v=3JZ_D3ELwOQ" target="_blank" class="text-cyan-300 hover:underline">Watch Now</a>
-      </div>
-
-      <!-- Video Tile 3 -->
-      <div class="min-w-[300px] snap-start bg-[#1A1A2E] p-4 rounded-lg shadow-lg hover-glow transition-all">
-        <img src="https://img.youtube.com/vi/oHg5SJYRHA0/0.jpg" alt="Video 3" class="rounded mb-2" />
-        <h4 class="text-lg mb-2">Animation Walkthrough</h4>
-        <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank" class="text-cyan-300 hover:underline">Watch Now</a>
-      </div>
-    </div>
-  </div>
-</section>
-        <!-- Testimonials Section -->
-<section id="testimonials" class="pt-32 pb-20 px-6 bg-[#1A1A2E] text-white">
-  <div class="max-w-6xl mx-auto">
-    <h3 class="text-3xl futuristic-font gradient-text mb-10 text-center">Testimonials</h3>
-    <div class="flex overflow-x-auto space-x-6 snap-x snap-mandatory pb-4">
-      <!-- Testimonial 1 -->
-      <div class="min-w-[300px] snap-start bg-[#121A27] p-6 rounded-lg shadow-lg hover-glow transition-all">
-        <div class="text-4xl mb-2">😊</div>
-        <p class="text-sm text-gray-300 mb-4">“SyntaxHill brought our vision to life with stunning animations and flawless UX.”</p>
-        <p class="text-cyan-300 font-semibold">— DevClient</p>
-      </div>
-
-      <!-- Testimonial 2 -->
-      <div class="min-w-[300px] snap-start bg-[#121A27] p-6 rounded-lg shadow-lg hover-glow transition-all">
-        <div class="text-4xl mb-2">🚀</div>
-        <p class="text-sm text-gray-300 mb-4">“The interactivity and polish blew us away. Truly next-level design.”</p>
-        <p class="text-cyan-300 font-semibold">— UIStudio</p>
-      </div>
-
-      <!-- Testimonial 3 -->
-      <div class="min-w-[300px] snap-start bg-[#121A27] p-6 rounded-lg shadow-lg hover-glow transition-all">
-        <div class="text-4xl mb-2">🌟</div>
-        <p class="text-sm text-gray-300 mb-4">“SyntaxHill’s attention to detail and animation work is unmatched.”</p>
-        <p class="text-cyan-300 font-semibold">— CreativeTech</p>
-      </div>
-    </div>
-  </div>
-</section>
-        <!-- Contact Section -->
-<section id="contact" class="pt-32 pb-20 px-6 bg-[#121A27] text-white">
-  <div class="max-w-4xl mx-auto">
-    <h3 class="text-3xl futuristic-font gradient-text mb-10 text-center">Get in Touch</h3>
-    <form class="space-y-6">
-      <div>
-        <label for="name" class="block mb-2">Name</label>
-        <input type="text" id="name" class="w-full px-4 py-2 rounded bg-[#1A1A2E] text-white border border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-300" />
-      </div>
-      <div>
-        <label for="email" class="block mb-2">Email</label>
-        <input type="email" id="email" class="w-full px-4 py-2 rounded bg-[#1A1A2E] text-white border border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-300" />
-      </div>
-      <div>
-        <label for="message" class="block mb-2">Message</label>
-        <textarea id="message" rows="4" class="w-full px-4 py-2 rounded bg-[#1A1A2E] text-white border border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-300"></textarea>
-      </div>
-      <button type="submit" class="hover-glow px-6 py-3 border border-cyan-400 rounded-full text-cyan-300">Send Message</button>
-    </form>
-  </div>
-</section>
-
-<!-- Login / Signup Section -->
-<section id="login" class="pt-32 pb-20 px-6 bg-[#1A1A2E] text-white">
-  <div class="max-w-md mx-auto text-center">
-    <h3 class="text-3xl futuristic-font gradient-text mb-6">Login / Signup</h3>
-    <p class="mb-6 text-gray-300">Access exclusive features and track your progress.</p>
-    <a href="#" class="hover-glow px-6 py-3 border border-cyan-400 rounded-full text-cyan-300">Login Now</a>
-  </div>
-</section>
-<!-- Footer -->
-<footer class="bg-black text-white py-10 px-6 text-center">
-  <p class="text-sm text-gray-400">© 2025 SyntaxHill. All rights reserved.</p>
-  <p class="text-xs mt-2 text-cyan-400">Crafted with code and creativity in West Bengal, India.</p>
-</footer>
-
+    <script src="/frontend/js/main.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
-
-
-
-
