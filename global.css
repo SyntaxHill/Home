@@ -165,5 +165,5 @@ nav {
     color: black;
     background-color: var(--accent1-color);
     transform: scale(1.3);
-    box-shadow: 0 0 50px var(--accent1-color);
+    /* box-shadow: 0 0 50px var(--accent1-color); */
 }
