@@ -1,0 +1,54 @@
+:root {
+    --primary-color: #0c0d11;
+    --accent-color: #617073;
+    --secondary-color: #7A93AC;
+    --main-color: #92BCEA;
+    --background-color: #AFB3F7;
+    --accent1-color: rgb(0, 81, 173);
+}
+
+@keyframes show-bars {
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes show-nav {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@property --angle {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@keyframes display-text {
+
+    25%,
+    100% {
+        display: none;
+    }
+}
+
+@keyframes fill-text {
+
+    10%,
+    100% {
+        width: 0;
+    }
+
+    70%,
+    90% {
+        width: 100%;
+    }
+}
+
+@keyframes rotate-border {
+    100% {
+        transform: rotate(360deg);
+    }
+}

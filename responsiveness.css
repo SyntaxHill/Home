@@ -1,0 +1,4 @@
+@media(max-width:900px){
+#home{flex-direction:column-reverse;text-align:center}
+.img-box{width:min(75vw,320px);height:min(75vw,320px)}
+}
