@@ -57,7 +57,7 @@ header {
     opacity: 0;
     animation: show-nav 1.5s linear forwards;
     animation-delay: 1.2s;
-    box-shadow: 0px -10px 25px white;
+   /* box-shadow: 0px -10px 25px white; */
 }
 
 nav {
